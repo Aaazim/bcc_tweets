@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>BCC Tweets</title>
+</head>
+<body>
+	
+    <h1>@BCCI Tweets:</h1>
+	<table id="twitter_handle" class="tweets">
+		<thead>
+			<tr style="fonts: 4px solid black;">
+				<th>Tweet</th>
+				<th>Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for tweets in data %}
+				<tr>
+					<td style="border:1px solid black;margin:1px;">{{tweets.text}}</td>
+					<td style="border:1px solid black;margin:1px;">{{tweets.created_at}}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>	
+</body>
+</html>
