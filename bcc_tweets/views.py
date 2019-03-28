@@ -16,10 +16,10 @@ import datetime
 
 def get_tweets(request):
 	#Setting up developer keys for Tweepy access to twitter
-	consumer_key = "JhtqmGSeqYRvbVUMxjUfKH5IJ"
-	consumer_secret = "6CAFqoBonJSDRiAmAuphCSOyk1Zb8KxM7IXyMHj5lUifCxu7J0"
-	access_key = "1075441158459817984-3cpGkHbDUtPFyryezmDJ9FCcd1kryN"
-	access_secret = "j1fHZcLDXCqRASK3UddEOKEZeQX87vif9z4v02rp7dkIb"
+	consumer_key = "###########################"
+	consumer_secret = "###########################"
+	access_key = "###########################"
+	access_secret = "###########################"
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_key, access_secret)
 	api = tweepy.API(auth)
